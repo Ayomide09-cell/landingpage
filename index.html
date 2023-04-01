@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cupcake</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <section id="section">
+        <div class="container">
+            <div class="navbar">
+                <img src="./images/logo.jpg" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">OUR MENU</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">OTHERS</a></li>
+                    </ul>
+                </nav>
+                <img src="./images/menu.png" class="menu" onclick="togglemenu()">
+    
+            </div>
+            <div class="row">
+                <div class="col-1">
+                <h2> Shop <span>Cupcakes</span></h2>
+                <h3>Order cupcakes for your party. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci ad alias distinctio id culpa assumenda impedit cumque quidem excepturi dignissimos. Sunt magnam cum officiis? Minus neque laborum aspernatur omnis quidem.</h3>
+                <h4>(#500)</h4>
+                <button type="button">Order now</button>
+            </div>
+        </div>
+
+        <div class="row2">
+            
+            
+            <div class="col-2">
+                <img src="./images/image2.jpg" class="flavour1">
+                <img src="./images/image3.jpg" class="flavour2">
+            </div>
+            <div class="form-wrapper">
+                <form onsubmit="myForm()">
+                <h2>Place Your Order</h2>
+                <label>Name: <input type="text" name="name" placeholder="Enter your name" required></label><br><br>
+                <label>Email: <input type="email" name="Email" placeholder="Enter your email" required></label><br><br>
+                <label>Phone: <input type="number" name="Phone" placeholder="Telephone No" required></label><br><br>
+                <label>Message:</label><textarea id="Message" placeholder="Your Message" rows="4"></textarea>
+                <input type="submit" name="submit">
+                </form>
+                
+            </div>
+        </div>
+        <div class="social-links">
+            <img src="./images/twitter logo.png">
+            <img src="./images/Instagram logo.png">
+            <div class="link">DESIGNED BY AYOMIDE;2023</div>
+        </div>
+            
+
+        
+  
+    </section>
+    
+        <script>
+            var menuList = document.getElementById("menuList");
+
+            menuList.style.maxHeight = "0px";
+
+            function togglemenu(){
+
+                if(menuList.style.maxHeight == "0px")
+                   {
+                    menuList.style.maxHeight = "120px";
+                   }
+                else
+                    {
+                    menuList.style.maxHeight="0px";
+                    }
+            }
+
+
+            function myForm(){
+            alert("submission was successful");
+            }
+        </script>
+</body>
+</html>
